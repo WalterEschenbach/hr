@@ -19,8 +19,8 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         height: '100%',
-        borderWidth: 1,            
-        borderColor: '#000000', 
+        borderWidth: 1,
+        borderColor: '#000000',
     },
     icon: {
         color: '#333',
