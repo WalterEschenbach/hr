@@ -41,7 +41,6 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         justifyContent: 'flex-start',
         flex: 1,
-        borderWidth: 1,
         margin: 10
     },
     name: {
