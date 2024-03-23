@@ -1,0 +1,134 @@
+[
+    {
+        "title": "Time Off Requests",
+        "data": [
+            {
+                "request": "I need a vacation for some personal relaxation and family time.",
+                "name": "John Doe",
+                "date": "2019-01-01"
+            },
+            {
+                "request": "I need time off for a family event.",
+                "name": "Jane Doe",
+                "date": "2022-01-01"
+            },
+            {
+                "request": "I require a leave of absence for personal reasons.",
+                "name": "Alice Johnson",
+                "date": "2021-03-15"
+            },
+            {
+                "request": "I need time off for a medical procedure.",
+                "name": "Jane Smith",
+                "date": "2020-02-02"
+            }
+            
+            
+        ]
+    },
+    {
+        "title": "Information Updates",
+        "data": [       
+            {
+                "request": "I have updated my contact details.",
+                "name": "John Doe",
+                "date": "2019-01-01"
+            },
+            {
+                "request": "I have updated my emergency contact information.",
+                "name": "Jane Doe",
+                "date": "2022-01-01"
+            },
+            {
+                "request": "I have updated my home address.",
+                "name": "Alice Johnson",
+                "date": "2021-03-15"
+            },
+            {
+                "request": "I have updated my tax withholding preferences.",
+                "name": "Jane Smith",
+                "date": "2020-02-02"
+            }
+        ]
+    },
+    {
+        "title": "Asset Request",
+        "data": [
+            {
+                "request": "I need a new laptop for my work.",
+                "name": "John Doe",
+                "date": "2019-01-01"
+            },
+            {
+                "request": "I require a new monitor for my workstation.",
+                "name": "Jane Doe",
+                "date": "2022-01-01"
+            },
+            {
+                "request": "I request a new office chair for ergonomic reasons.",
+                "name": "Alice Johnson",
+                "date": "2021-03-15"
+            }
+        ]
+    },
+    {
+        "title": "Compensation",
+        "data": [
+            {
+                "request": "I request a salary increase due to my increased responsibilities.",
+                "name": "John Doe",
+                "date": "2019-01-01"
+            },
+            {
+                "request": "I would like to discuss my compensation package.",
+                "name": "Jane Doe",
+                "date": "2022-01-01"
+            },
+            {
+                "request": "I request a review of my current compensation in light of market rates.",
+                "name": "Alice Johnson",
+                "date": "2021-03-15"
+            }
+        ]
+    },
+    {
+        "title": "Employment Status",
+        "data": [
+            {
+                "request": "I would like to change my employment status to part-time.",
+                "name": "John Doe",
+                "date": "2019-01-01"
+            },
+            {
+                "request": "I am considering a transition to remote work.",
+                "name": "Jane Doe",
+                "date": "2022-01-01"
+            },
+            {
+                "request": "I am submitting my resignation effective from next month.",
+                "name": "Alice Johnson",
+                "date": "2021-03-15"
+            }
+        ]
+    },
+    {
+        "title": "Onboarding",
+        "data": [
+            {
+                "request": "I would like to start my onboarding process.",
+                "name": "John Doe",
+                "date": "2019-01-01"
+            },
+            {
+                "request": "I am ready to begin my onboarding training.",
+                "name": "Jane Doe",
+                "date": "2022-01-01"
+            },
+            {
+                "request": "I have completed my onboarding and ready to start work.",
+                "name": "Alice Johnson",
+                "date": "2021-03-15"
+            }
+        ]
+    }
+]
