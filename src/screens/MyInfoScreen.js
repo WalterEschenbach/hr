@@ -1,14 +1,9 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-import PersonalScreen from './PersonalScreen';
-import JobScreen from './JobScreen';
 import TopNavBar from '../navigation/TopNavBar';
-import TimeOffScreen from './TimeOffScreen';
-import DocumentsScreen from './DocumentsScreen';
-import BenefitsScreen from './BenefitsScreen';
-import PerformanceScreen from './PerformanceScreen';
-import NotesScreen from './NotesScreen';
+import tabs from '../assets/json/nav-buttons-top.json';
+import renderTabs from '../utils/topNavRenderer';
 
 
 const Tab = createMaterialTopTabNavigator();
@@ -17,13 +12,7 @@ export default function MyInfoScreen() {
     return (
         <Tab.Navigator
             tabBar={(props) => <TopNavBar {...props} />}>
-            <Tab.Screen name="Personal" component={PersonalScreen} />
-            <Tab.Screen name="Job" component={JobScreen} />
-            <Tab.Screen name="Time Off" component={TimeOffScreen} />
-            <Tab.Screen name="Documents" component={DocumentsScreen} />
-            <Tab.Screen name="Benefits" component={BenefitsScreen} />
-            <Tab.Screen name="Performance" component={PerformanceScreen} />
-            <Tab.Screen name="Notes" component={NotesScreen} />
+            {tabs.map((tab, index) => (<Tab.Screen key={index} name={tab.title} component={renderTabs(tab.title)} />))}
         </Tab.Navigator>
     );
 }
