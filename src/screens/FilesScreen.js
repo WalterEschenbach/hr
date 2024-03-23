@@ -1,10 +1,16 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, ScrollView } from 'react-native';
+import Search from '../components/forms/Search';
+import FileFolder from '../components/items/FileFolder';
+import folders from '../assets/json/file-categories.json';
 
 export default function FilesScreen() {
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>FilesScreen</Text>
+            <Search />
+            <ScrollView>
+                {folders.map((folder, index) => <FileFolder key={index} title={folder.title} number={folder.quantity} />)}
+            </ScrollView>
         </View>
     );
 }
@@ -12,7 +18,7 @@ export default function FilesScreen() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
         alignItems: 'center',
         backgroundColor: '#F5FCFF',
     },
