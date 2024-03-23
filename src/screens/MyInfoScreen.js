@@ -1,11 +1,19 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet } from 'react-native';
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import TopNavBar from '../navigation/TopNavBar';
+import tabs from '../assets/json/nav-buttons-top.json';
+import renderTabs from '../utils/topNavRenderer';
+
+
+const Tab = createMaterialTopTabNavigator();
 
 export default function MyInfoScreen() {
     return (
-        <View style={styles.container}>
-            <Text style={styles.title}>My Info Screen</Text>
-        </View>
+        <Tab.Navigator
+            tabBar={(props) => <TopNavBar {...props} />}>
+            {tabs.map((tab, index) => (<Tab.Screen key={index} name={tab.title} component={renderTabs(tab.title)} />))}
+        </Tab.Navigator>
     );
 }
 

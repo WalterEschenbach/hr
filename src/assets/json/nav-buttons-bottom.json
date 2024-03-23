@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Home",
+        "icon": "home"
+    },
+    {
+        "title": "Inbox",
+        "icon": "inbox"
+    },
+    {
+        "title": "People",
+        "icon": "users"
+    },
+    {
+        "title": "Files",
+        "icon": "file"
+    },
+    {
+        "title": "My Info",
+        "icon": "user"
+    }
+]

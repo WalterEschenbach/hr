@@ -1,34 +1,13 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, StyleSheet } from 'react-native';
+import NavButtonBottom from '../components/items/NavButtonBottom';
+import tabs from '../assets/json/nav-buttons-bottom.json';
 
-const BottomNavBar = ({ navigation }) => {
+export default function BottomNavBar({ navigation }) {
+
     return (
         <View style={styles.container}>
-            <TouchableOpacity
-                style={styles.tab}
-                onPress={() => navigation.navigate('Home')}>
-                <Text style={styles.tabText}>Home</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-                style={styles.tab}
-                onPress={() => navigation.navigate('Inbox')}>
-                <Text style={styles.tabText}>Inbox</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-                style={styles.tab}
-                onPress={() => navigation.navigate('People')}>
-                <Text style={styles.tabText}>People</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-                style={styles.tab}
-                onPress={()=> navigation.navigate('Files')}>
-                <Text style={styles.tabText}>Files</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-                style={styles.tab}
-                onPress={()=> navigation.navigate('MyInfo')}>
-                <Text style={styles.tabText}>My Info</Text>
-            </TouchableOpacity>
+            {tabs.map((tab, index) => (<NavButtonBottom key={index} navigation={navigation} tab={tab} />))}
         </View>
     );
 };
@@ -42,19 +21,5 @@ const styles = StyleSheet.create({
         height: 100,
         borderTopWidth: 1,
         borderTopColor: '#000000',
-    },
-    tab: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '100%',
-        borderWidth: 1,            
-        borderColor: '#000000', 
-    },
-    tabText: {
-        fontSize: 16,
-        color: '#333',
-    },
+    }
 });
-
-export default BottomNavBar;
