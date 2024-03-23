@@ -20,7 +20,7 @@ export default function App() {
         <Tab.Screen name="Inbox" component={InboxScreen} />
         <Tab.Screen name="People" component={PeopleScreen} />
         <Tab.Screen name="Files" component={FilesScreen} />
-        <Tab.Screen name="MyInfo" component={MyInfoScreen} />
+        <Tab.Screen name="My Info" component={MyInfoScreen} />
     </Tab.Navigator>
 </NavigationContainer>
   );
