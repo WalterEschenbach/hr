@@ -68,8 +68,9 @@ const styles = StyleSheet.create({
     textContainer: {
         flexDirection: 'column',
         justifyContent: 'flex-start',
+        alignItems: 'flex-start',
         flex: 1,
-        margin: 10,
+        marginHorizontal: 10,
     },
     header: {
         fontSize: 18,
